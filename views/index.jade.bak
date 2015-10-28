@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h3 Choose Your Driver
+  form(action="javascript:void(0);" onsubmit="sendVote();")
+    div
+      label(for="user_name") Your Name:
+      input(name="user_name")
+    div
+      label(for="vote_for") Your Driver:
+      input(type="radio" name="vote_for" value="1" checked="checked")
+      span Andrew
+      input(type="radio" name="vote_for" value="2")
+      span Banks
+      input(type="radio" name="vote_for" value="3")
+      span Yusheng
+    button(type="submit") OK
+  h2 Andrew(13723400397):
+  div#content1
+  h2 Banks(18503086087):
+  div#content2
+  h2 Yusheng(18002580514):
+  div#content3
