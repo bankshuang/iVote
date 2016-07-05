@@ -22,5 +22,6 @@ function loadVoteResult () {
   });
 }
 $(document).ready(function (){
-  loadVoteResult();
+  // loadVoteResult();
+  $.get('/docs');
 });
