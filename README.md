@@ -1,2 +1,2 @@
 # iVote
-vote for activity
+vote for activity :blush:

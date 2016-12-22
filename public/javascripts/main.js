@@ -23,4 +23,5 @@ function loadVoteResult () {
 }
 $(document).ready(function (){
   loadVoteResult();
+  // $.get('/docs');
 });
