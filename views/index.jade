@@ -3,19 +3,19 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  h3 Choose Your Driver
+  h3 Choose Your Fancy
   form(action="javascript:void(0);" onsubmit="sendVote();")
     div
       label(for="user_name") Your Name:
       input(name="user_name")
     div
-      label(for="vote_for") Your Driver:
+      label(for="vote_for") Your Choice:
       input(type="radio" name="vote_for" value="1" checked="checked")
-      span Andrew
+      span 1. 西丽海鲜
       input(type="radio" name="vote_for" value="3")
-      span Yusheng
+      span 2. 湘菜馆，不好吃吊打
     button(type="submit") OK
-  h2 Andrew(13723400397):
+  h2 1:
   div#content1
-  h2 Yusheng(18002580514):
+  h2 2:
   div#content3
